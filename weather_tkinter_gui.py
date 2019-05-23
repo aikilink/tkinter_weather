@@ -1,3 +1,5 @@
+# On Github/aikilink
+
 import tkinter as tk
 
 HEIGHT = 500
