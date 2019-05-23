@@ -1,6 +1,7 @@
 # On Github/aikilink
 
 import tkinter as tk
+import requests
 
 HEIGHT = 500
 WIDTH = 600
