@@ -14,10 +14,10 @@ def test_function(entry):
 
 def get_weather(city):
     weather_key = 'a7f87b5f44e411210dc6324575d1a4db'
-    url = 'https://api.openweathermap.org/data/2.5/forecast'
+    url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city, 'units': 'Imperial'}
     response = requests.get(url, params = params)
-    print(response.json())
+    weather = response.json()
 
 root = tk.Tk()
 
