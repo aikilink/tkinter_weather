@@ -19,6 +19,15 @@ def get_weather(city):
     response = requests.get(url, params = params)
     weather = response.json()
 
+    label['text'] = format_response(weather)
+
+def format_response(weather):
+    name = weather['name']
+    desc = weather['weather'][0]['description']
+    temp = weather['main']['temp']
+
+    label['text'] = str(name) + ', ' + str(desc) + ': ' + str(temp)
+
 root = tk.Tk()
 
 canvas = tk.Canvas(root, height = HEIGHT, width = WIDTH)
