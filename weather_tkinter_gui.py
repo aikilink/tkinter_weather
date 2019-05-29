@@ -10,8 +10,6 @@ WIDTH = 600
 def test_function(entry):
     print("This is the entry:", entry)
 
-    # api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
-    # a7f87b5f44e411210dc6324575d1a4db
 
 def get_weather(city):
     weather_key = 'a7f87b5f44e411210dc6324575d1a4db'
